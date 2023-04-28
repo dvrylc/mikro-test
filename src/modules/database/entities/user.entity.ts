@@ -8,4 +8,10 @@ export class User extends BaseEntity {
 
   @Property()
   name: string;
+
+  constructor(name: string) {
+    super();
+    this.name = name;
+    this.email = `${name}@example.com`;
+  }
 }

@@ -7,7 +7,7 @@ export class UserController {
 
   @Get()
   async findAll() {
-    const users = await this.service.findAll();
+    const users = await this.service.deleteAndCreate();
     return users;
   }
 }
